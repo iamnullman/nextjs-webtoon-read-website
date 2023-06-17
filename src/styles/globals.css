@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #000;
+    color: #c2c6cc;
+    overflow-x: hidden !important;
+}
+
+.slider-item {
+    display: inline-flex;
+    align-items: center;
+    height: 32rem;
+    justify-content: center;
+    white-space: normal;
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0d0d0d;
+    box-shadow: inset 0 -40px 16px 0 #050505;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.sliders {
+    height: 500px;
+    z-index: 2;
+    position: relative;
+    background-size: 100% !important;
+    box-shadow: inset 0 -40px 16px 0 #050505;
+}
+
+.slider-active {
+    transition: all 0.2s !important;
+    background-color: #fff !important;
+    height: 1.8rem !important;
+}
+
+.slider-list {
+    white-space: nowrap !important;
+    transition: transform 0.3s;
+}
+button .ripple {
+    background-color: rgba(128, 128, 128, 0.1) !important;
+}
+
+#search {
+    margin-top: 10px;
+}
+
+.browse-banner {
+    position: relative;
+    height: 16rem;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.browse-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.navbar-image:hover {
+    transition: transform 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8), outline 0.4s !important;
+}
+
+.navbar-item > i {
+    background-color: transparent;
+}
+
+.navbar-input {
+    background-color: transparent;
+    outline: none;
+    align-items: center;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 50px;
+    position: relative !important;
+    width: 500px;
+}
+
+.browse-black {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 600ms 0ms;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-feature-settings: "liga" 0, "ordn" 0, "pnum" 0, "salt" 0, "ss01" 0, "ss02" 0, "tnum" 0, "ss03" 1;
+}
+
+.card-bg {
+    background-color: rgb(14 11 7 / 90%);
+}
+
+.home-bg-content {
+    position: relative;
+    z-index: 9999;
+}
+
+.home-bg-color {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 255px;
+    background: rgba(22, 22, 22, 0.6);
+}
+
+.card-border {
+    border-right: 1px solid #242425;
+    border-bottom: 1px solid #242425;
+    border-top: 1px solid #242425;
+}
+
+.card-info {
+    white-space: nowrap !important;
+    transition: transform .3s;
+}
+
+.card-info-item {
+    display: inline-flex;
+    white-space: normal;
+}
+
+.card-description-opacity:hover {
+    opacity: 100;
+    transition: opacity .3s;
+}
+
+.card-image-desc {
+    font-size: 1.4rem;
+    padding: 12px;
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10;
+    object-fit: cover;
+}
+
+.card-image-item {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.2);
+    border-radius: 20px;
+}
+
+
+
+.image-card {
+    max-width: 375px;
+}
